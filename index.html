@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegio Secundario Pablo Pizzurno | San Salvador de Jujuy</title>
+  <meta name="description" content="Colegio Secundario Pablo Pizzurno en San Salvador de Jujuy. Compromiso educativo, formación integral y excelencia académica en Barrio Cuyaya.">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph / Meta Compartir -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Colegio Secundario Pablo Pizzurno">
+  <meta property="og:description" content="Compromiso educativo y formación integral en San Salvador de Jujuy.">
+  <meta property="og:image" content="frente_pp.jpg">
+
+  <!-- Favicon / Ícono para Navegadores y Buscadores -->
+  <link rel="icon" type="image/png" href="logo pp nuevo sin fondo-gigapixel-scale-4_00x.png">
+  <link rel="shortcut icon" type="image/png" href="logo pp nuevo sin fondo-gigapixel-scale-4_00x.png">
+  <link rel="apple-touch-icon" href="logo pp nuevo sin fondo-gigapixel-scale-4_00x.png">
+
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '420px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+        },
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+              950: '#041726',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen overflow-x-hidden">
+
+  <!-- ==================== HEADER / BARRA DE NAVEGACIÓN (MOBILE FIRST) ==================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all shadow-xs">
+    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+      
+      <!-- Logo e Identidad -->
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3.5 group min-w-0" aria-label="Inicio - Colegio Secundario Pablo Pizzurno">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-50 p-1 flex items-center justify-center border border-slate-100 shadow-xs flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+          <img 
+            src="logo pp nuevo sin fondo-gigapixel-scale-4_00x.png" 
+            alt="Logo Colegio Secundario Pablo Pizzurno" 
+            class="w-full h-full object-contain"
+            width="48"
+            height="48"
+            loading="eager"
+          >
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span class="font-display font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-tight tracking-tight truncate group-hover:text-brand-700 transition-colors">
+            Colegio Secundario Pablo Pizzurno
+          </span>
+          <span class="text-[11px] sm:text-xs text-slate-500 font-medium tracking-wider uppercase truncate">
+            San Salvador de Jujuy
+          </span>
+        </div>
+      </a>
+
+      <!-- Navegación & CTA Header -->
+      <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
+        <!-- Navegación Secciones Desktop -->
+        <nav class="hidden md:flex items-center gap-1 mr-1">
+          <a 
+            href="#novedades" 
+            class="text-sm font-medium text-slate-700 hover:text-brand-700 px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors"
+          >
+            Novedades
+          </a>
+          <a 
+            href="#ubicacion" 
+            class="text-sm font-medium text-slate-700 hover:text-brand-700 px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors"
+          >
+            Ubicación
+          </a>
+        </nav>
+
+        <!-- Redes Sociales Header (Visibles en tablet/desktop para no saturar móviles) -->
+        <div class="hidden sm:flex items-center gap-1">
+          <a 
+            href="https://www.facebook.com/ColegioSecundarioPabloPizzurno" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-600 hover:text-[#1877F2] hover:bg-slate-100 transition-colors"
+            aria-label="Facebook del Colegio Secundario Pablo Pizzurno"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a 
+            href="https://www.instagram.com/colegiopablopizzurno?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="w-9 h-9 flex items-center justify-center rounded-lg text-slate-600 hover:text-[#E4405F] hover:bg-slate-100 transition-colors"
+            aria-label="Instagram del Colegio Secundario Pablo Pizzurno"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Botón CTA Navegación (Compacto y amigable para celular) -->
+        <a 
+          href="#ubicacion" 
+          class="inline-flex items-center gap-1.5 bg-brand-700 hover:bg-brand-800 text-white font-medium text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 active:scale-95"
+        >
+          <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+          <span>Cómo llegar</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="flex-grow">
+
+    <!-- ==================== HERO SECTION (PORTADA MOBILE-OPTIMIZED) ==================== -->
+    <section class="relative min-h-[480px] sm:min-h-[580px] lg:min-h-[660px] flex items-center justify-center bg-brand-950 overflow-hidden">
+      
+      <!-- Imagen de Fachada de Fondo -->
+      <img 
+        src="frente_pp.jpg" 
+        alt="Fachada del Colegio Secundario Pablo Pizzurno" 
+        class="absolute inset-0 w-full h-full object-cover object-center scale-105 transform motion-safe:animate-fade-in"
+        loading="eager"
+      >
+
+      <!-- Overlay Oscuro Sutil Gradiente para Máximo Contraste y Legibilidad -->
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/60 backdrop-blur-[1px]"></div>
+
+      <!-- Contenido Hero -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 text-center flex flex-col items-center">
+        
+        <!-- Badge Institucional -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-100 text-xs sm:text-sm font-medium mb-5 shadow-inner">
+          <span class="w-2 h-2 rounded-full bg-accent-400 animate-pulse"></span>
+          <span>Educación de calidad</span>
+        </div>
+
+        <!-- Título Principal Fluido -->
+        <h1 class="font-display font-extrabold text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-tight max-w-4xl drop-shadow-md">
+          Colegio Secundario Pablo Pizzurno
+        </h1>
+
+        <!-- Subtítulo Fluido -->
+        <p class="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl lg:text-2xl text-slate-200 font-normal max-w-2xl leading-relaxed drop-shadow">
+          Compromiso educativo y formación integral en San Salvador de Jujuy
+        </p>
+
+        <!-- CTA Directo en Hero -->
+        <div class="mt-7 sm:mt-8 flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto px-2">
+          <a 
+            href="#ubicacion" 
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-xl shadow-lg hover:shadow-brand-500/30 transition-all duration-200 active:scale-98"
+          >
+            <svg class="w-5 h-5 text-accent-200 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            <span>Ver Ubicación y Mapa</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Divisor Estilizado Hacia la Sección Inferior -->
+      <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-slate-50 to-transparent"></div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE NOVEDADES Y COMUNICADOS ==================== -->
+    <section id="novedades" class="py-12 sm:py-20 bg-white border-b border-slate-200/80 scroll-mt-16 sm:scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado de la Sección (Sin el cartel de sync) -->
+        <div class="mb-8 sm:mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-xs font-semibold uppercase tracking-wider mb-2.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Cartelera Digital Institucional</span>
+          </div>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+            Novedades y Comunicados
+          </h2>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed">
+            Información oficial, fechas de exámenes, actos escolares y avisos para toda la comunidad educativa.
+          </p>
+        </div>
+
+        <!-- Grilla de Noticias / Tarjetas Dinámicas -->
+        <div id="contenedor-novedades" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Noticia 1 (Precargada / Fallback) -->
+          <article class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-rose-100 text-rose-800 border border-rose-200">
+                  Importante
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Octubre 2026</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-slate-900 tracking-tight group-hover:text-brand-700 transition-colors mb-3">
+                Preinscripciones y Requisitos Ciclo Lectivo
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Se encuentra disponible el cronograma de recepción de documentación para ingresantes a 1° año. Los tutores deben presentarse en secretaría con la ficha completa.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Secretaría Escolar</span>
+              <span class="text-xs font-semibold text-brand-700 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                Leer más &rarr;
+              </span>
+            </div>
+          </article>
+
+          <!-- Noticia 2 (Precargada / Fallback) -->
+          <article class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-sky-100 text-sky-800 border border-sky-200">
+                  Académico
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Reciente</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-slate-900 tracking-tight group-hover:text-brand-700 transition-colors mb-3">
+                Mesas de Exámenes y Apoyo Pedagógico
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Consultá en preceptoría los horarios de las tutorías de apoyo escolar para las materias previas y libres antes de las mesas de evaluación.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Equipo Pedagógico</span>
+              <span class="text-xs font-semibold text-brand-700 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                Ver turnos &rarr;
+              </span>
+            </div>
+          </article>
+
+          <!-- Noticia 3 (Precargada / Fallback) -->
+          <article class="bg-slate-50 rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-4">
+                <span class="px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                  Institucional
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Comunidad</span>
+              </div>
+              <h3 class="font-display font-bold text-lg sm:text-xl text-slate-900 tracking-tight group-hover:text-brand-700 transition-colors mb-3">
+                Muestra Anual de Proyectos Estudiantiles
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Invitamos a las familias del Colegio Secundario Pablo Pizzurno a participar de la exposición anual donde los alumnos presentan sus trabajos interdisciplinarios.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs text-slate-500 font-medium">Dirección</span>
+              <span class="text-xs font-semibold text-brand-700 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                Conocer más &rarr;
+              </span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE UBICACIÓN Y MAPA ==================== -->
+    <section id="ubicacion" class="py-12 sm:py-20 bg-slate-50 scroll-mt-16 sm:scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+          <h2 class="text-xs uppercase tracking-widest text-brand-700 font-bold mb-2">Visitanos</h2>
+          <p class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+            Nuestra Institución en Jujuy
+          </p>
+          <p class="mt-2.5 text-slate-600 text-sm sm:text-base md:text-lg">
+            Encontrá la información de acceso rápido y planificá tu llegada al establecimiento.
+          </p>
+        </div>
+
+        <!-- Grilla de 2 Columnas -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-stretch">
+          
+          <!-- Columna 1: Tarjeta de Información -->
+          <div class="bg-white rounded-2xl p-5 sm:p-8 lg:p-10 border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              
+              <!-- Encabezado Tarjeta -->
+              <div class="inline-flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-brand-50 text-brand-700 mb-5 sm:mb-6">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+              </div>
+
+              <h3 class="font-display font-bold text-xl sm:text-2xl md:text-3xl text-slate-900 tracking-tight mb-3 sm:mb-4">
+                Nuestra Ubicación
+              </h3>
+
+              <p class="text-slate-600 text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
+                El Colegio Secundario Pablo Pizzurno está situado en el tradicional Barrio Cuyaya de San Salvador de Jujuy, con cómodo acceso tanto en transporte público como particular.
+              </p>
+
+              <!-- Dirección Exacta con Ícono SVG de Pin -->
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100 mb-8">
+                <div class="flex-shrink-0 mt-1">
+                  <svg class="w-6 h-6 text-brand-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase text-slate-500 tracking-wider mb-1">
+                    Dirección Institucional
+                  </h4>
+                  <p class="text-slate-900 font-semibold text-base sm:text-lg leading-snug">
+                    La Rioja 1970, Barrio Cuyaya, Y4600 San Salvador de Jujuy, Jujuy, Argentina
+                  </p>
+                </div>
+              </div>
+
+              <!-- Canales de Contacto Directo y Redes -->
+              <div class="mb-8">
+                <h4 class="text-xs font-semibold uppercase text-slate-500 tracking-wider mb-3">
+                  Contacto Directo y Redes Sociales
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <!-- Botón WhatsApp dentro de la tarjeta -->
+                  <a 
+                    href="https://wa.me/5493884430690?text=Hola,%20deseo%20hacer%20una%20consulta%20sobre%20el%20Colegio%20Secundario%20Pablo%20Pizzurno" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-3 p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200/60 text-emerald-900 transition-colors group"
+                  >
+                    <div class="w-8 h-8 rounded-lg bg-[#25D366] text-white flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform shadow-sm">
+                      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.946.559 3.766 1.528 5.305L2.1 21.9l4.743-1.401A9.957 9.957 0 0012.001 22C17.523 22 22 17.522 22 12c0-5.522-4.477-10-9.999-10zm5.834 14.17c-.244.686-1.417 1.309-1.956 1.378-.508.065-1.157.094-3.722-.968-3.08-1.275-5.06-4.407-5.213-4.61-.153-.203-1.238-1.647-1.238-3.14 0-1.494.783-2.228 1.06-2.515.276-.288.601-.36.802-.36.2 0 .402.002.576.012.187.009.438-.071.684.521.256.616.873 2.128.948 2.282.076.154.126.334.025.536-.1.203-.151.33-.301.506-.151.176-.317.393-.453.528-.152.152-.311.317-.134.62.177.304.785 1.294 1.684 2.094 1.156 1.03 2.13 1.348 2.433 1.5.303.153.481.127.659-.076.177-.203.759-.884.962-1.187.202-.303.404-.253.682-.152.278.101 1.769.834 2.072.986.303.152.505.228.581.354.076.127.076.735-.168 1.421z"/>
+                      </svg>
+                    </div>
+                    <div class="flex flex-col text-left">
+                      <span class="text-xs text-emerald-700 font-semibold uppercase">WhatsApp</span>
+                      <span class="text-xs sm:text-sm font-medium text-slate-800">+54 9 388 443-0690</span>
+                    </div>
+                  </a>
+
+                  <!-- Redes Sociales Rápidas -->
+                  <div class="flex items-center gap-2">
+                    <a 
+                      href="https://www.facebook.com/ColegioSecundarioPabloPizzurno" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-blue-50 hover:bg-blue-100/80 border border-blue-200/60 text-blue-900 transition-colors group"
+                      aria-label="Facebook Oficial"
+                    >
+                      <svg class="w-5 h-5 text-[#1877F2] fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                      </svg>
+                      <span class="text-xs sm:text-sm font-medium text-slate-800">Facebook</span>
+                    </a>
+
+                    <a 
+                      href="https://www.instagram.com/colegiopablopizzurno?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-rose-50 hover:bg-rose-100/80 border border-rose-200/60 text-rose-900 transition-colors group"
+                      aria-label="Instagram Oficial"
+                    >
+                      <svg class="w-5 h-5 text-[#E4405F] fill-current group-hover:scale-110 transition-transform" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      </svg>
+                      <span class="text-xs sm:text-sm font-medium text-slate-800">Instagram</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botón Primario Destacado -->
+            <div class="pt-2">
+              <a 
+                href="https://maps.app.goo.gl/YvZgYvCK4e5dTXwP9" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="inline-flex items-center justify-center gap-3 w-full bg-brand-700 hover:bg-brand-800 text-white font-semibold text-base px-6 py-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 group"
+              >
+                <span>Abrir en Google Maps / Cómo llegar</span>
+                <svg class="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Columna 2: Mapa Interactivo -->
+          <div class="flex flex-col h-full">
+            <div class="relative bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex-1 min-h-[340px] md:min-h-[400px]">
+              <iframe 
+                src="https://maps.google.com/maps?q=Colegio%20Secundario%20Pablo%20Pizzurno,%20La%20Rioja%201970,%20San%20Salvador%20de%20Jujuy&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-80 md:h-96 lg:h-full rounded-xl border-0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de ubicación del Colegio Secundario Pablo Pizzurno"
+              ></iframe>
+            </div>
+            <p class="text-xs text-slate-500 text-center mt-2.5">
+              Interactuá con el mapa: hacé zoom o arrastrá para explorar las calles aledañas.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+      
+      <!-- Información Institucional Footer -->
+      <div class="flex items-center gap-3">
+        <img 
+          src="logo pp nuevo sin fondo-gigapixel-scale-4_00x.png" 
+          alt="Colegio Secundario Pablo Pizzurno" 
+          class="w-10 h-10 object-contain opacity-90 brightness-110"
+          width="40"
+          height="40"
+          loading="lazy"
+        >
+        <div class="flex flex-col text-left">
+          <span class="font-display font-semibold text-slate-100 text-base">
+            Colegio Secundario Pablo Pizzurno
+          </span>
+          <span class="text-xs text-slate-400">
+            La Rioja 1970, San Salvador de Jujuy
+          </span>
+        </div>
+      </div>
+
+      <!-- Redes Sociales Footer -->
+      <div class="flex items-center gap-4">
+        <a 
+          href="https://www.facebook.com/ColegioSecundarioPabloPizzurno" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105"
+          aria-label="Facebook del Colegio Secundario Pablo Pizzurno"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+
+        <a 
+          href="https://www.instagram.com/colegiopablopizzurno?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-10 h-10 rounded-full bg-slate-800 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105"
+          aria-label="Instagram del Colegio Secundario Pablo Pizzurno"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+        <a 
+          href="https://wa.me/5493884430690?text=Hola,%20deseo%20hacer%20una%20consulta%20sobre%20el%20Colegio%20Secundario%20Pablo%20Pizzurno" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#25D366] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105"
+          aria-label="WhatsApp del Colegio Secundario Pablo Pizzurno"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.946.559 3.766 1.528 5.305L2.1 21.9l4.743-1.401A9.957 9.957 0 0012.001 22C17.523 22 22 17.522 22 12c0-5.522-4.477-10-9.999-10zm5.834 14.17c-.244.686-1.417 1.309-1.956 1.378-.508.065-1.157.094-3.722-.968-3.08-1.275-5.06-4.407-5.213-4.61-.153-.203-1.238-1.647-1.238-3.14 0-1.494.783-2.228 1.06-2.515.276-.288.601-.36.802-.36.2 0 .402.002.576.012.187.009.438-.071.684.521.256.616.873 2.128.948 2.282.076.154.126.334.025.536-.1.203-.151.33-.301.506-.151.176-.317.393-.453.528-.152.152-.311.317-.134.62.177.304.785 1.294 1.684 2.094 1.156 1.03 2.13 1.348 2.433 1.5.303.153.481.127.659-.076.177-.203.759-.884.962-1.187.202-.303.404-.253.682-.152.278.101 1.769.834 2.072.986.303.152.505.228.581.354.076.127.076.735-.168 1.421z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Copyright y Créditos -->
+      <div class="text-xs text-slate-400 space-y-1">
+        <p>© 2026 Colegio Secundario Pablo Pizzurno. Todos los derechos reservados.</p>
+        <p class="text-slate-500">San Salvador de Jujuy, Jujuy, Argentina</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN FLOTANTE WHATSAPP (OPTIMIZADO MÓVIL) ==================== -->
+  <aside aria-label="Contacto flotante por WhatsApp">
+    <a 
+      href="https://wa.me/5493884430690?text=Hola,%20deseo%20hacer%20una%20consulta%20sobre%20el%20Colegio%20Secundario%20Pablo%20Pizzurno" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105 active:scale-95 group focus:outline-none focus:ring-4 focus:ring-emerald-400/50"
+      aria-label="Abrir chat de WhatsApp con el Colegio Secundario Pablo Pizzurno"
+    >
+      <!-- Pulso sutil en el botón -->
+      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5 pointer-events-none">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-200"></span>
+      </span>
+
+      <!-- Ícono Oficial WhatsApp -->
+      <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.946.559 3.766 1.528 5.305L2.1 21.9l4.743-1.401A9.957 9.957 0 0012.001 22C17.523 22 22 17.522 22 12c0-5.522-4.477-10-9.999-10zm5.834 14.17c-.244.686-1.417 1.309-1.956 1.378-.508.065-1.157.094-3.722-.968-3.08-1.275-5.06-4.407-5.213-4.61-.153-.203-1.238-1.647-1.238-3.14 0-1.494.783-2.228 1.06-2.515.276-.288.601-.36.802-.36.2 0 .402.002.576.012.187.009.438-.071.684.521.256.616.873 2.128.948 2.282.076.154.126.334.025.536-.1.203-.151.33-.301.506-.151.176-.317.393-.453.528-.152.152-.311.317-.134.62.177.304.785 1.294 1.684 2.094 1.156 1.03 2.13 1.348 2.433 1.5.303.153.481.127.659-.076.177-.203.759-.884.962-1.187.202-.303.404-.253.682-.152.278.101 1.769.834 2.072.986.303.152.505.228.581.354.076.127.076.735-.168 1.421z"/>
+      </svg>
+
+      <!-- Texto descriptivo (visible en desktop, compacto en móvil) -->
+      <span class="hidden sm:inline-block font-semibold text-sm tracking-wide">
+        ¿Consultas? Escribinos
+      </span>
+    </a>
+  </aside>
+
+  <!-- ==================== SCRIPT INTEGRACIÓN GOOGLE SHEETS ==================== -->
+  <script>
+    /**
+     * CONFIGURACIÓN GOOGLE APPS SCRIPT / GOOGLE SHEETS
+     */
+    const GOOGLE_SHEETS_API_URL = "https://script.google.com/macros/s/AKfycbxq6kDkV8YCG0-ZM4U91yyRYwhDyKXynwWyJb_vD27GzK8OqFzfiRf5jyUuLwR_7cKYng/exec"; 
+
+    async function cargarNovedadesDesdeSheet() {
+      if (!GOOGLE_SHEETS_API_URL || GOOGLE_SHEETS_API_URL.trim() === "") return;
+
+      const contenedor = document.getElementById("contenedor-novedades");
+      if (!contenedor) return;
+
+      try {
+        const response = await fetch(GOOGLE_SHEETS_API_URL);
+        if (!response.ok) throw new Error("Error en la conexión con la planilla");
+
+        const data = await response.json();
+
+        // Validamos que sea un array con al menos un elemento
+        if (Array.isArray(data) && data.length > 0) {
+          contenedor.innerHTML = ""; // Limpiamos contenido precargado para dar lugar a los datos en vivo
+
+          data.forEach(item => {
+            // Soportamos variaciones de nombres de columnas (con o sin tildes)
+            const categoria = item.categoria || item['categoría'] || item.tipo || item.seccion || "Aviso";
+            const titulo = item.titulo || item['título'] || item.title || item.nombre || "Comunicado Oficial";
+            const descripcion = item.descripcion || item['descripción'] || item.detalle || item.contenido || item.texto || "";
+            const fechaRaw = item.fecha || item.date || "";
+            const fecha = fechaRaw ? formatearFecha(fechaRaw) : "Reciente";
+            const enlace = (item.enlace || item.link || item.url || item.archivo || "").toString().trim();
+
+            // Asignación de estilos según la categoría
+            let badgeClasses = "bg-slate-100 text-slate-800 border-slate-200";
+            const catLower = categoria.toString().toLowerCase();
+            if (catLower.includes("importante") || catLower.includes("urgente")) {
+              badgeClasses = "bg-rose-100 text-rose-800 border-rose-200";
+            } else if (catLower.includes("académico") || catLower.includes("academico") || catLower.includes("examen") || catLower.includes("tutoría") || catLower.includes("tutoria")) {
+              badgeClasses = "bg-sky-100 text-sky-800 border-sky-200";
+            } else if (catLower.includes("institucional") || catLower.includes("comunidad") || catLower.includes("acto")) {
+              badgeClasses = "bg-emerald-100 text-emerald-800 border-emerald-200";
+            }
+
+            const card = document.createElement("article");
+            card.className = "bg-slate-50 rounded-2xl p-5 sm:p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group";
+
+            card.innerHTML = `
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-3.5">
+                  <span class="px-2.5 py-1 rounded-md text-xs font-semibold border ${badgeClasses}">
+                    ${escapeHtml(categoria)}
+                  </span>
+                  <span class="text-xs text-slate-400 font-medium">${escapeHtml(fecha)}</span>
+                </div>
+                <h3 class="font-display font-bold text-base sm:text-lg lg:text-xl text-slate-900 tracking-tight group-hover:text-brand-700 transition-colors mb-2.5">
+                  ${escapeHtml(titulo)}
+                </h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                  ${escapeHtml(descripcion)}
+                </p>
+              </div>
+              <div class="pt-3.5 border-t border-slate-200 flex items-center justify-between">
+                <span class="text-xs text-slate-500 font-medium">Pablo Pizzurno</span>
+                ${enlace ? `
+                  <a href="${encodeURI(enlace)}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-700 hover:text-brand-800 transition-colors inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    <span>Ver más / Archivo</span> &rarr;
+                  </a>
+                ` : `
+                  <span class="text-xs font-medium text-slate-400">Oficial</span>
+                `}
+              </div>
+            `;
+
+            contenedor.appendChild(card);
+          });
+        }
+      } catch (err) {
+        console.warn("Aviso: Conexión con Google Sheets no disponible en este momento. Mostrando cartelera oficial.", err);
+      }
+    }
+
+    // Utilidad simple para sanitizar texto
+    function escapeHtml(text) {
+      if (!text) return "";
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // Formateador de fechas
+    function formatearFecha(valor) {
+      if (!valor) return "Reciente";
+      if (typeof valor === "string" && valor.includes("/")) return valor;
+      const d = new Date(valor);
+      if (isNaN(d.getTime())) return valor;
+      return d.toLocaleDateString("es-AR", { day: "2-digit", month: "short", year: "numeric" });
+    }
+
+    // Cargar al iniciar
+    document.addEventListener("DOMContentLoaded", cargarNovedadesDesdeSheet);
+  </script>
+</body>
+</html>
