@@ -286,9 +286,9 @@
             </h3>
           </div>
 
-          <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-5">
             <!-- Paso 1 -->
-            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+            <li class="lg:col-span-2 bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
               <div class="flex items-center gap-3 mb-3.5">
                 <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">1</span>
                 <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 1</span>
@@ -300,7 +300,7 @@
             </li>
 
             <!-- Paso 2 -->
-            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+            <li class="lg:col-span-2 bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
               <div class="flex items-center gap-3 mb-3.5">
                 <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">2</span>
                 <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 2</span>
@@ -312,53 +312,67 @@
             </li>
 
             <!-- Paso 3 -->
-            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
-              <div class="flex items-center gap-3 mb-3.5">
-                <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">3</span>
-                <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 3</span>
+            <li class="lg:col-span-2 bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-3.5">
+                  <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">3</span>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 3</span>
+                </div>
+                <h4 class="font-display font-bold text-base text-slate-900 mb-2">Solicitá tu turno de entrevista</h4>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Escribinos por WhatsApp para solicitar el turno de entrevista de Inscripciones 2027.
+                </p>
               </div>
-              <h4 class="font-display font-bold text-base text-slate-900 mb-2">Asistí en tu turno</h4>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                Asistí al colegio en el turno asignado con la documentación y la entrevista impresa y completada para profundizar la instancia con <strong class="font-semibold text-slate-800">Dirección y Asesoría Pedagógica</strong>.
-              </p>
+              <div class="pt-3 border-t border-slate-100">
+                <a 
+                  href="https://wa.me/5493884430690?text=Hola%2C%20escribo%20para%20solicitar%20turno%20de%20entrevista%20para%20Inscripciones%202027%20en%20el%20Colegio%20Secundario%20Pablo%20Pizzurno." 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="w-full inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold px-3.5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white shadow-xs transition-colors"
+                >
+                  <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.946.559 3.766 1.528 5.305L2.1 21.9l4.743-1.401A9.957 9.957 0 0012.001 22C17.523 22 22 17.522 22 12c0-5.522-4.477-10-9.999-10zm5.834 14.17c-.244.686-1.417 1.309-1.956 1.378-.508.065-1.157.094-3.722-.968-3.08-1.275-5.06-4.407-5.213-4.61-.153-.203-1.238-1.647-1.238-3.14 0-1.494.783-2.228 1.06-2.515.276-.288.601-.36.802-.36.2 0 .402.002.576.012.187.009.438-.071.684.521.256.616.873 2.128.948 2.282.076.154.126.334.025.536-.1.203-.151.33-.301.506-.151.176-.317.393-.453.528-.152.152-.311.317-.134.62.177.304.785 1.294 1.684 2.094 1.156 1.03 2.13 1.348 2.433 1.5.303.153.481.127.659-.076.177-.203.759-.884.962-1.187.202-.303.404-.253.682-.152.278.101 1.769.834 2.072.986.303.152.505.228.581.354.076.127.076.735-.168 1.421z"/>
+                  </svg>
+                  <span>Solicitar turno de entrevista</span>
+                </a>
+              </div>
             </li>
 
             <!-- Paso 4 -->
-            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between">
+            <li class="lg:col-span-3 bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+              <div class="flex items-center gap-3 mb-3.5">
+                <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">4</span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 4</span>
+              </div>
+              <h4 class="font-display font-bold text-base text-slate-900 mb-2">Asistí en tu turno asignado</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Asistí en el turno asignado al colegio (<strong class="font-semibold text-slate-800">La Rioja Nº 1970, Bº Cuyaya, San Salvador de Jujuy</strong>) con la documentación y la entrevista impresa y completada para profundizar la instancia con <strong class="font-semibold text-slate-800">Dirección y Asesoría Pedagógica</strong>.
+              </p>
+            </li>
+
+            <!-- Paso 5 -->
+            <li class="sm:col-span-2 lg:col-span-3 bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between">
               <div>
                 <div class="flex items-center gap-3 mb-3.5">
-                  <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">4</span>
-                  <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 4</span>
+                  <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">5</span>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 5</span>
                 </div>
-                <h4 class="font-display font-bold text-base text-slate-900 mb-2">¿Tenés consultas?</h4>
+                <h4 class="font-display font-bold text-base text-slate-900 mb-2">Mesa de entrada virtual</h4>
                 <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Ante cualquier duda, contactanos por los canales oficiales del colegio.
+                  Accedé a nuestra mesa de entrada virtual para gestionar trámites y consultas administrativas en línea.
                 </p>
               </div>
-              <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100">
+              <div class="pt-3 border-t border-slate-100">
                 <a 
-                  href="https://wa.me/5493884430690?text=Hola,%20deseo%20hacer%20una%20consulta%20sobre%20las%20Inscripciones%202027%20del%20Colegio%20Secundario%20Pablo%20Pizzurno" 
+                  href="https://forms.gle/6q9h8XrqSWNWE31U6" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200/70 transition-colors"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl bg-brand-700 hover:bg-brand-800 text-white shadow-xs transition-colors"
                 >
-                  <span>WhatsApp</span>
-                </a>
-                <a 
-                  href="https://www.facebook.com/ColegioSecundarioPabloPizzurno" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-800 border border-blue-200/70 transition-colors"
-                >
-                  <span>Facebook</span>
-                </a>
-                <a 
-                  href="https://www.instagram.com/colegiopablopizzurno?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-200/70 transition-colors"
-                >
-                  <span>Instagram</span>
+                  <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                  <span>Acceder a Mesa de Entrada Virtual</span>
                 </a>
               </div>
             </li>
@@ -429,7 +443,7 @@
                   Importante: instancia de entrevista
                 </h4>
                 <p class="text-sm text-amber-900 leading-relaxed">
-                  Recordá <strong class="font-semibold">imprimir la Entrevista Ciclo Lectivo 2027, llenarla previamente con claridad</strong> y acudir en el <strong class="font-semibold">turno asignado</strong> para profundizarla junto a <strong class="font-semibold">Dirección y Asesoría Pedagógica</strong>.
+                  Recordá <strong class="font-semibold">imprimir la Entrevista Ciclo Lectivo 2027</strong>, <strong class="font-semibold">llenarla previamente con los datos del alumno (no del tutor)</strong> y llevarla el día del <strong class="font-semibold">turno asignado</strong> para profundizar la instancia junto a <strong class="font-semibold">Dirección y Asesoría Pedagógica</strong>.
                 </p>
               </div>
             </div>
