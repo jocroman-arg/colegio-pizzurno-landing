@@ -94,7 +94,13 @@
       <!-- Navegación & CTA Header -->
       <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
         <!-- Navegación Secciones Desktop -->
-        <nav class="hidden md:flex items-center gap-1 mr-1">
+        <nav class="hidden md:flex items-center gap-1 mr-1" aria-label="Navegación principal">
+          <a 
+            href="#inscripciones-2027" 
+            class="text-sm font-semibold text-brand-700 bg-brand-50 hover:bg-brand-100 px-3 py-2 rounded-lg transition-colors"
+          >
+            Inscripciones 2027
+          </a>
           <a 
             href="#novedades" 
             class="text-sm font-medium text-slate-700 hover:text-brand-700 px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors"
@@ -138,17 +144,59 @@
         <!-- Botón CTA Navegación (Compacto y amigable para celular) -->
         <a 
           href="#ubicacion" 
-          class="inline-flex items-center gap-1.5 bg-brand-700 hover:bg-brand-800 text-white font-medium text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 active:scale-95"
+          class="inline-flex items-center gap-1.5 bg-brand-700 hover:bg-brand-800 text-white font-medium text-xs sm:text-sm px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 active:scale-95"
         >
           <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
           </svg>
-          <span>Cómo llegar</span>
+          <span class="hidden xs:inline">Cómo llegar</span>
         </a>
+
+        <!-- Botón Menú Móvil -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg text-slate-700 hover:text-brand-700 hover:bg-slate-100 border border-slate-200/80 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
+        >
+          <svg id="mobile-menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="mobile-menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
 
     </div>
+
+    <!-- Menú de Navegación Móvil -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-md shadow-sm" aria-label="Navegación móvil">
+      <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
+        <a 
+          href="#inscripciones-2027" 
+          class="mobile-nav-link flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-brand-800 bg-brand-50 hover:bg-brand-100 transition-colors"
+        >
+          <span>Inscripciones 2027</span>
+          <span class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-brand-700 text-white">1.er Año</span>
+        </a>
+        <a 
+          href="#novedades" 
+          class="mobile-nav-link block px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-100 transition-colors"
+        >
+          Novedades
+        </a>
+        <a 
+          href="#ubicacion" 
+          class="mobile-nav-link block px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-700 hover:text-brand-700 hover:bg-slate-100 transition-colors"
+        >
+          Ubicación
+        </a>
+      </div>
+    </nav>
   </header>
 
   <!-- ==================== MAIN CONTENT ==================== -->
@@ -205,6 +253,271 @@
 
       <!-- Divisor Estilizado Hacia la Sección Inferior -->
       <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-slate-50 to-transparent"></div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE INSCRIPCIONES 2027 ==================== -->
+    <section id="inscripciones-2027" class="py-12 sm:py-20 bg-slate-50 border-b border-slate-200/80 scroll-mt-16 sm:scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Encabezado Institucional -->
+        <div class="mb-10 sm:mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-200/80 text-brand-700 text-xs font-semibold uppercase tracking-wider mb-3">
+            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+            <span>Inscripciones 2027 · Nivel Secundario</span>
+          </div>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900 tracking-tight">
+            Ingreso a 1.er Año — Ciclo Lectivo 2027
+          </h2>
+          <p class="mt-2.5 text-slate-600 text-sm sm:text-base md:text-lg max-w-3xl leading-relaxed">
+            <strong class="font-semibold text-slate-800">Colegio Secundario Pablo Pizzurno</strong> · La Rioja Nº 1970, Bº Cuyaya, San Salvador de Jujuy. Consultá el instructivo para familias, la documentación requerida y descargá los formularios oficiales para completar antes de tu turno.
+          </p>
+        </div>
+
+        <!-- Instructivo Paso a Paso para Padres / Tutores -->
+        <div class="mb-8 sm:mb-10">
+          <div class="flex items-center gap-2.5 mb-5">
+            <span class="w-8 h-8 rounded-lg bg-brand-700 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+            </span>
+            <h3 class="font-display font-bold text-lg sm:text-xl text-slate-900 tracking-tight">
+              Instructivo paso a paso para padres y tutores
+            </h3>
+          </div>
+
+          <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <!-- Paso 1 -->
+            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+              <div class="flex items-center gap-3 mb-3.5">
+                <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">1</span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 1</span>
+              </div>
+              <h4 class="font-display font-bold text-base text-slate-900 mb-2">Descargá e imprimí</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Descargá e imprimí la <strong class="font-semibold text-slate-800">Ficha de Ingreso (Ciclo Lectivo 2027)</strong> y la <strong class="font-semibold text-slate-800">Entrevista Ciclo Lectivo 2027</strong> desde los enlaces de descarga de esta sección.
+              </p>
+            </li>
+
+            <!-- Paso 2 -->
+            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+              <div class="flex items-center gap-3 mb-3.5">
+                <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">2</span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 2</span>
+              </div>
+              <h4 class="font-display font-bold text-base text-slate-900 mb-2">Completá y reuní requisitos</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Completá ambos formularios con claridad y reuní toda la documentación requerida para el ingreso a 1.er año.
+              </p>
+            </li>
+
+            <!-- Paso 3 -->
+            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col">
+              <div class="flex items-center gap-3 mb-3.5">
+                <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">3</span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 3</span>
+              </div>
+              <h4 class="font-display font-bold text-base text-slate-900 mb-2">Asistí en tu turno</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Asistí al colegio en el turno asignado con la documentación y la entrevista impresa y completada para profundizar la instancia con <strong class="font-semibold text-slate-800">Dirección y Asesoría Pedagógica</strong>.
+              </p>
+            </li>
+
+            <!-- Paso 4 -->
+            <li class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-3.5">
+                  <span class="w-8 h-8 rounded-full bg-brand-700 text-white font-display font-bold text-sm flex items-center justify-center flex-shrink-0">4</span>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-brand-700">Paso 4</span>
+                </div>
+                <h4 class="font-display font-bold text-base text-slate-900 mb-2">¿Tenés consultas?</h4>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Ante cualquier duda, contactanos por los canales oficiales del colegio.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100">
+                <a 
+                  href="https://wa.me/5493884430690?text=Hola,%20deseo%20hacer%20una%20consulta%20sobre%20las%20Inscripciones%202027%20del%20Colegio%20Secundario%20Pablo%20Pizzurno" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200/70 transition-colors"
+                >
+                  <span>WhatsApp</span>
+                </a>
+                <a 
+                  href="https://www.facebook.com/ColegioSecundarioPabloPizzurno" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-800 border border-blue-200/70 transition-colors"
+                >
+                  <span>Facebook</span>
+                </a>
+                <a 
+                  href="https://www.instagram.com/colegiopablopizzurno?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-800 border border-rose-200/70 transition-colors"
+                >
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Grilla Principal: Documentación Requerida + Descarga de Formularios PDF -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+
+          <!-- Columna Izquierda: Documentación Necesaria -->
+          <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <div class="flex items-start gap-3.5 mb-6">
+              <div class="w-11 h-11 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center flex-shrink-0 border border-brand-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-xl sm:text-2xl text-slate-900 tracking-tight">
+                  Documentación necesaria para ingreso a 1.er año
+                </h3>
+                <p class="text-sm text-slate-500 mt-1">
+                  Presentar completa el día del turno asignado en el establecimiento.
+                </p>
+              </div>
+            </div>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">1</span>
+                <span class="text-sm font-medium text-slate-800">DNI actualizado del alumno.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">2</span>
+                <span class="text-sm font-medium text-slate-800">Partida de nacimiento.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">3</span>
+                <span class="text-sm font-medium text-slate-800">Correo electrónico del alumno.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">4</span>
+                <span class="text-sm font-medium text-slate-800">DNI del padre o tutor.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">5</span>
+                <span class="text-sm font-medium text-slate-800">CUIL del tutor y del alumno.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">6</span>
+                <span class="text-sm font-medium text-slate-800">Correo electrónico del tutor.</span>
+              </li>
+              <li class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/70 sm:col-span-2">
+                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 font-display font-bold text-xs flex items-center justify-center flex-shrink-0">7</span>
+                <span class="text-sm font-medium text-slate-800">Constancia de finalización de 7.mo grado.</span>
+              </li>
+            </ul>
+
+            <!-- Nota Destacada sobre Entrevista -->
+            <div class="rounded-xl bg-amber-50 border border-amber-200/90 border-l-4 border-l-amber-500 p-4 sm:p-5 flex items-start gap-3.5">
+              <div class="w-9 h-9 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-sm sm:text-base text-amber-950 mb-1">
+                  Importante: instancia de entrevista
+                </h4>
+                <p class="text-sm text-amber-900 leading-relaxed">
+                  Recordá <strong class="font-semibold">imprimir la Entrevista Ciclo Lectivo 2027, llenarla previamente con claridad</strong> y acudir en el <strong class="font-semibold">turno asignado</strong> para profundizarla junto a <strong class="font-semibold">Dirección y Asesoría Pedagógica</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Descarga de Formularios PDF -->
+          <div class="lg:col-span-5 flex flex-col gap-4 sm:gap-5">
+            <div class="bg-brand-900 text-white rounded-2xl p-6 sm:p-7 shadow-md border border-brand-800">
+              <div class="flex items-center gap-2.5 mb-2">
+                <svg class="w-5 h-5 text-accent-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                <span class="text-xs font-semibold uppercase tracking-wider text-brand-200">Descarga directa</span>
+              </div>
+              <h3 class="font-display font-bold text-xl sm:text-2xl tracking-tight">
+                Formularios oficiales PDF
+              </h3>
+              <p class="text-sm text-brand-100/90 mt-1.5 leading-relaxed">
+                Descargá ambos archivos en formato PDF para imprimir y completar antes de concurrir al colegio.
+              </p>
+
+              <div class="mt-6 space-y-4">
+                <!-- Tarjeta PDF 1: Ficha de Inscripción 2027 -->
+                <article class="bg-white text-slate-800 rounded-xl p-5 border border-brand-200/40 shadow-sm flex flex-col justify-between gap-4">
+                  <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 flex flex-col items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                      </svg>
+                      <span class="text-[9px] font-extrabold leading-none tracking-tight mt-0.5">PDF</span>
+                    </div>
+                    <div class="min-w-0">
+                      <h4 class="font-display font-bold text-base text-slate-900 leading-snug">
+                        Ficha de Inscripción 2027
+                      </h4>
+                      <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                        Datos del alumno, padre, madre/tutor, responsable económico y registro de cambios de domicilio.
+                      </p>
+                    </div>
+                  </div>
+                  <a 
+                    href="formulario-inscripcion-cpp-2027.pdf" 
+                    download="formulario-inscripcion-cpp-2027.pdf"
+                    class="w-full inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm px-4 py-3 rounded-xl shadow-xs hover:shadow transition-all duration-200 active:scale-98"
+                  >
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    <span>Descargar Ficha de Inscripción (PDF)</span>
+                  </a>
+                </article>
+
+                <!-- Tarjeta PDF 2: Entrevista Ciclo Lectivo 2027 -->
+                <article class="bg-white text-slate-800 rounded-xl p-5 border border-brand-200/40 shadow-sm flex flex-col justify-between gap-4">
+                  <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 flex flex-col items-center justify-center flex-shrink-0">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                      </svg>
+                      <span class="text-[9px] font-extrabold leading-none tracking-tight mt-0.5">PDF</span>
+                    </div>
+                    <div class="min-w-0">
+                      <h4 class="font-display font-bold text-base text-slate-900 leading-snug">
+                        Entrevista Ciclo Lectivo 2027
+                      </h4>
+                      <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                        Cuestionario de 15 puntos para completar antes de la entrevista con Dirección y Asesoría Pedagógica.
+                      </p>
+                    </div>
+                  </div>
+                  <a 
+                    href="entrevista-ciclo-lectivo-2027.pdf" 
+                    download="entrevista-ciclo-lectivo-2027.pdf"
+                    class="w-full inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-800 text-white font-semibold text-sm px-4 py-3 rounded-xl shadow-xs hover:shadow transition-all duration-200 active:scale-98"
+                  >
+                    <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                    <span>Descargar Entrevista 2027 (PDF)</span>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
     <!-- ==================== SECCIÓN DE NOVEDADES Y COMUNICADOS ==================== -->
@@ -556,6 +869,45 @@
       </span>
     </a>
   </aside>
+
+  <!-- ==================== SCRIPT MENÚ MÓVIL ==================== -->
+  <script>
+    (function () {
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("mobile-menu-icon-open");
+      const iconClose = document.getElementById("mobile-menu-icon-close");
+
+      if (!menuButton || !mobileMenu) return;
+
+      function setMenuOpen(isOpen) {
+        mobileMenu.classList.toggle("hidden", !isOpen);
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación");
+        if (iconOpen && iconClose) {
+          iconOpen.classList.toggle("hidden", isOpen);
+          iconClose.classList.toggle("hidden", !isOpen);
+        }
+      }
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = mobileMenu.classList.contains("hidden");
+        setMenuOpen(isOpen);
+      });
+
+      mobileMenu.querySelectorAll(".mobile-nav-link").forEach(function (link) {
+        link.addEventListener("click", function () {
+          setMenuOpen(false);
+        });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+          setMenuOpen(false);
+        }
+      });
+    })();
+  </script>
 
   <!-- ==================== SCRIPT INTEGRACIÓN GOOGLE SHEETS ==================== -->
   <script>
